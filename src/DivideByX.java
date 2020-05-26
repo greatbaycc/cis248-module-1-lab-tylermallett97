@@ -2,15 +2,19 @@ import java.util.Scanner;
 
 public class DivideByX {
     public static void main(String[] args) {
-        int userNum = Integer.MAX_VALUE;
-        int x = Integer.MAX_VALUE;
         Scanner scnr = new Scanner(System.in);
+        int userNum = scnr.nextInt();
+        int x = scnr.nextInt();
 
-        for (int i = 1; i < 3; i++) {
+        userNum = userNum / x;
+        System.out.print(userNum + " ");
 
-            userNum = scnr.nextInt();
-            x = scnr.nextInt();
-            System.out.print(userNum / x + " ");
-        }
+        userNum = userNum / x;
+        System.out.print(userNum + " ");
+
+        userNum = userNum / x;
+        System.out.print(userNum);
+
+        System.out.println();
     }
 }
